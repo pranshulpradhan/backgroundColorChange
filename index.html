@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background With More Colors</title>
+    <style>
+        /* CSS for the body element */
+        body {
+            background-color: blue; /* Initial background color */
+            background-image: url("./images/image4.jpeg"); /* Initial background image */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 400px 250px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* CSS for the container element */
+        .container {
+            display: flex;
+            width: max-content;
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-direction: column;
+        }
+
+        /* Media query for screens with a maximum width of 600px */
+        @media (max-width: 600px) {
+            /* Adjusting styles for smaller screens */
+
+            /* CSS for the body element on smaller screens */
+            body {
+                height: 500px; /* Adjust the height for smaller screens */
+            }
+
+            /* CSS for the container element on smaller screens */
+            .container {
+                height: 400px; /* Adjust the height for smaller screens */
+            }
+
+            /* CSS for the "Change BackGround Color" button on smaller screens */
+            .changeColor {
+                width: 100px; /* Adjust the size for smaller screens */
+                height: 100px;
+            }
+
+            /* CSS for the "Change Background Image" button on smaller screens */
+            .changeImage {
+                width: 100px; /* Adjust the size for smaller screens */
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with buttons to change background color and image -->
+    <header class="container">
+        <button class="changeColor">Change BackGround Color</button>
+        <button class="changeImage">Change Background Image</button>
+    </header>
+    <!-- JavaScript file to handle button actions -->
+    <script src="./script.js"></script>
+</body>
+</html>
